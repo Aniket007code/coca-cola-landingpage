@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+}
+
+.main_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1%; */
+    /* background-color: red; */
+}
+
+.logo{
+    margin-left: 3%;
+}
+
+.navigations{
+    display: flex;
+    gap: 2vw;
+    /* margin-left: 2rem; */
+    margin-right: 2%;
+}
+
+.navigations li,a{
+    list-style-type: none;
+    /* background-color: black; */
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+.cocacola_heading{
+    /* padding-left: 2vw; */
+    margin-left: 11vw;
+    font-size: 2rem;
+}
+
+.Main_Section{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.left_section{
+    width: 50%;
+    /* border: 1px solid green; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_section{
+    width: 50%;
+    /* border: 1px solid blue; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    font-weight: 600;
+    font-size: 1rem;
+
+
+}
+
+.left_section img{
+  width: 300px;
+  height: 300px;
+  /* transform: rotate3d(45deg); */
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translateX(-50%) rotate(0deg);
+  transition: top 1s ease-in-out, transform 1s ease-in-out;
+  
+}
+
+img:hover {
+    /* top: 100%; */
+    transform: translateX(-50%) rotate(180deg);
+}
