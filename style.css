@@ -16,12 +16,26 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 1%; */
+    margin-top: 0.7rem
     /* background-color: red; */
 }
 
 .logo{
     margin-left: 3%;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    border-radius: 25px;
+}
+
+.logo>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+    
+
+
 }
 
 .navigations{
@@ -75,6 +89,7 @@ body{
     padding-bottom: 6rem;
     font-weight: 600;
     font-size: 1rem;
+    max-width: 550px;
 
 
 }
@@ -84,7 +99,7 @@ body{
   height: 300px;
   /* transform: rotate3d(45deg); */
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 25%;
   transform: translateX(-50%) rotate(0deg);
   transition: top 1s ease-in-out, transform 1s ease-in-out;
@@ -94,4 +109,49 @@ body{
 img:hover {
     /* top: 100%; */
     transform: translateX(-50%) rotate(180deg);
+}
+
+@media  (max-width : 700px) {
+    .Main_Section{
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* height: 100vh; */
+    }
+
+    .navigations{
+        /* display: flex;
+        gap: 2vw;
+        /* margin-left: 2rem; */
+        /* margin-right: 2%;  */
+        display: none;
+    }
+
+    /* .main_header{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+    } */
+
+    .cocacola_heading{
+        position: absolute;
+        left: 4rem;
+        right: 0%;
+    }
+
+    .left_section img{
+        position: absolute;
+        left: 50vw;
+        top: 20%;
+    }
+
+    .right_section{
+        position: absolute;
+        top: 40%;
+    }
+
+    
 }
