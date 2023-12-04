@@ -164,6 +164,8 @@ img:hover {
     align-items: center;
     gap: 5rem;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
+    border: 1px solid red;
 }
 
 .brand_card_container{
@@ -187,4 +189,47 @@ img:hover {
     text-align: center;
     margin-bottom: 4rem;
     font-size:3rem;
+}
+
+.Big_cards{
+    border: 2px solid blueviolet;
+}
+
+.big_card1{
+    width: 400px;
+    height: 530px;
+    border: 2px solid firebrick;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.text_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 2rem;
+}
+
+.card_explore_button{
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 40%;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card_title{
+    margin-right: 3rem;
+}
+
+.card_desc{
+    margin-left: 2.5rem;
+    font-size: 17px;
 }
