@@ -94,7 +94,7 @@ body{
 
 }
 
-.left_section img{
+.final_image{
   width: 300px;
   height: 300px;
   /* transform: rotate3d(45deg); */
@@ -106,7 +106,7 @@ body{
   
 }
 
-img:hover {
+.final_image:hover {
     /* top: 100%; */
     transform: translateX(-50%) rotate(180deg);
 }
@@ -165,7 +165,7 @@ img:hover {
     gap: 5rem;
     flex-wrap: wrap;
     margin-bottom: 4rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .brand_card_container{
@@ -192,18 +192,31 @@ img:hover {
 }
 
 .Big_cards{
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
+}
+
+.jobs_heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 1rem;
 }
 
 .big_card1{
     width: 400px;
     height: 530px;
-    border: 2px solid firebrick;
+    /* border: 2px solid firebrick; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+    position: absolute;
+    left: 20%;
+    z-index: 99;
+    background-color: whitesmoke;
+    margin-top: 20px;
 }
 
 .text_details{
@@ -232,4 +245,67 @@ img:hover {
 .card_desc{
     margin-left: 2.5rem;
     font-size: 17px;
+    margin-right: 2rem;
+}
+
+.big_card2{
+    width: 400px;
+    height: 530px;
+    /* border: 2px solid #b22222; */
+    border-radius: 20px;   
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+    position: absolute;
+    left: 47%;
+    /* top: 90%; */
+    margin-top: 6%;
+    z-index: -1;
+}
+
+.section_height_width{
+    width: 100vw;
+    height: 800px;
+    /* border: 2px solid red; */
+}
+
+
+@media (max-width : 700px) {
+   
+    .Big_cards{
+        /* background-color: aqua; */
+    }
+    .big_card1{
+        /* background-color: brown; */
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        left: 5%
+
+
+    }
+
+    .big_card2{
+        /* background-color: cadetblue; */
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        top: 420%;
+        left: 5%;
+        /* margin-bottom: 2rem; */
+    }
+
+    
+    .section_height_width{
+        width: 100%;
+        height: 800px;
+        /* border: 2px solid red; */
+    }
+}
+
+.big_carad_img{
+    width: 400px;
+    height: 530px;
+    border-radius: 20px;   
+
+
 }
